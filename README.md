@@ -8,7 +8,7 @@ Providing the highest quality browser cacheing since 1824.
 
 ### Why should you care?
 
-On the suraface, it seems like it's the same situation as always. You know, you're serving a static site in production and nothing is out of the ordinary. But suddenly, your users start complaining that they haven't seen your latest update. What? You just deployed it!
+On the surface, it seems like it's the same situation as always. You know, you're serving a static site in production and nothing is out of the ordinary. But suddenly, your users start complaining that they haven't seen your latest update. What? You just deployed it!
 
 Cacheing problems. We all have them. But if you're using archivist, at least you know the problems are entirely your own fault, because the options archivist provides are so clear and flexible, and it's so meticulous in enforcing them, that you simply *must* be the weak link in the chain.
 
