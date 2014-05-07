@@ -1,4 +1,4 @@
-# archivist-middleware
+# Archivist Middleware
 
 [![npm](http://img.shields.io/npm/v/archivist-middleware.svg?style=flat)](https://badge.fury.io/js/archivist-middleware) [![tests](http://img.shields.io/travis/carrot/archivist-middleware/master.svg?style=flat)](https://travis-ci.org/carrot/archivist-middleware) [![dependencies](http://img.shields.io/gemnasium/carrot/archivist-middleware.svg?style=flat)](https://david-dm.org/carrot/archivist-middleware)
 
