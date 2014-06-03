@@ -27,7 +27,7 @@ describe 'basic', ->
       .use(alchemist(path.join(base_path, 'basic')))
 
     chai.request(app).get('/').res (res) ->
-      should.not.exist(res.headers['cache-control'])
+      res.headers['cache-control'].should.equal('public, max-age=0')
       done()
 
   it 'should set different headers for different globstars', (done) ->
