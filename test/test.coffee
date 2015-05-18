@@ -8,7 +8,7 @@ describe 'basic', ->
       .use(archivist('/': 360000))
       .use(alchemist(path.join(base_path, 'basic')))
 
-    chai.request(app).get('/').res (res) ->
+    chai.request(app).get('/').end (res) ->
       res.headers['cache-control'].should.equal('public; max-age=360000')
       done()
 
@@ -17,7 +17,7 @@ describe 'basic', ->
       .use(archivist('/': 'wow'))
       .use(alchemist(path.join(base_path, 'basic')))
 
-    chai.request(app).get('/').res (res) ->
+    chai.request(app).get('/').end (res) ->
       res.headers['cache-control'].should.equal('wow')
       done()
 
@@ -26,7 +26,7 @@ describe 'basic', ->
       .use(archivist('/': false))
       .use(alchemist(path.join(base_path, 'basic')))
 
-    chai.request(app).get('/').res (res) ->
+    chai.request(app).get('/').end (res) ->
       res.headers['cache-control'].should.equal('public, max-age=0')
       done()
 
@@ -35,9 +35,9 @@ describe 'basic', ->
       .use(archivist('/': 'one', '/foo.*': 'two'))
       .use(alchemist(path.join(base_path, 'basic')))
 
-    chai.request(app).get('/').res (res) ->
+    chai.request(app).get('/').end (res) ->
       res.headers['cache-control'].should.equal('one')
 
-      chai.request(app).get('/foo.html').res (res) ->
+      chai.request(app).get('/foo.html').end (res) ->
         res.headers['cache-control'].should.equal('two')
         done()
