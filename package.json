@@ -10,15 +10,15 @@
   },
   "main": "lib",
   "devDependencies": {
-    "mocha": "*",
-    "chai": "*",
-    "chai-http": "*",
-    "connect": "*",
-    "coffeelint": "*",
-    "istanbul": "*",
-    "mocha-lcov-reporter": "*",
+    "mocha": "2.x",
+    "chai": "3.x",
+    "chai-http": "1.x",
+    "connect": "3.x",
+    "coffeelint": "1.x",
+    "istanbul": "0.3.x",
+    "mocha-lcov-reporter": "0.0.2",
     "coffee-script": "1.9.x",
-    "alchemist-middleware": "0.0.x"
+    "alchemist-middleware": "0.x"
   },
   "scripts": {
     "test": "npm run lint && mocha",
